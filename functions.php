@@ -52,6 +52,18 @@ function enqueue_styles() {
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_styles' );
 
 /**
+ * Register theme.
+ */
+function register_theme() {
+	// Register custom block patterns.
+	register_block_patterns();
+
+	// Register custom block styles.
+	register_block_styles();
+}
+add_action( 'init', __NAMESPACE__ . '\\register_theme' );
+
+/**
  * Register custom pattern categories and patterns.
  */
 function register_block_patterns() {
@@ -74,4 +86,66 @@ function register_block_patterns() {
 		);
 	}
 }
-add_action( 'init', __NAMESPACE__ . '\\register_block_patterns' );
+
+/**
+ * Add block style variations.
+ */
+function register_block_styles() {
+
+	$block_styles = array(
+		'core/list'         => array(
+			'list-check'        => __( 'Check', 'ollie' ),
+			'list-check-circle' => __( 'Check Circle', 'ollie' ),
+			'list-boxed'        => __( 'Boxed', 'ollie' ),
+		),
+		'core/code'         => array(
+			'dark-code' => __( 'Dark', 'ollie' ),
+		),
+		'core/cover'        => array(
+			'blur-image-less' => __( 'Blur Image Less', 'ollie' ),
+			'blur-image-more' => __( 'Blur Image More', 'ollie' ),
+			'rounded-cover'   => __( 'Rounded', 'ollie' ),
+		),
+		'core/column'       => array(
+			'column-box-shadow' => __( 'Box Shadow', 'ollie' ),
+		),
+		'core/post-excerpt' => array(
+			'excerpt-truncate-2' => __( 'Truncate 2 Lines', 'ollie' ),
+			'excerpt-truncate-3' => __( 'Truncate 3 Lines', 'ollie' ),
+			'excerpt-truncate-4' => __( 'Truncate 4 Lines', 'ollie' ),
+		),
+		'core/group'        => array(
+			'column-box-shadow' => __( 'Box Shadow', 'ollie' ),
+			'background-blur'   => __( 'Background Blur', 'ollie' ),
+		),
+		'core/separator'    => array(
+			'separator-dotted' => __( 'Dotted', 'ollie' ),
+			'separator-thin'   => __( 'Thin', 'ollie' ),
+		),
+		'core/image'        => array(
+			'rounded-full' => __( 'Rounded Full', 'ollie' ),
+			'media-boxed'  => __( 'Boxed', 'ollie' ),
+		),
+		'core/preformatted' => array(
+			'preformatted-dark' => __( 'Dark Style', 'ollie' ),
+		),
+		'core/post-terms'   => array(
+			'term-button' => __( 'Button Style', 'ollie' ),
+		),
+		'core/video'        => array(
+			'media-boxed' => __( 'Boxed', 'ollie' ),
+		),
+	);
+
+	foreach ( $block_styles as $block => $styles ) {
+		foreach ( $styles as $style_name => $style_label ) {
+			register_block_style(
+				$block,
+				array(
+					'name'  => $style_name,
+					'label' => $style_label,
+				)
+			);
+		}
+	}
+}
