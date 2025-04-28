@@ -1,4 +1,9 @@
 {
+    "name": "aura-theme",
+    "version": "0.0.1",
+    "description": "Aura – Developer-first WordPress block theme starter.",
+    "author": "Mehul Gohil <your@email.com>",
+    "license": "GPL-2.0-or-later",
     "scripts": {
       "build:css": "wp-scripts build-style",
       "start:css": "wp-scripts start-style",
@@ -6,7 +11,10 @@
       "start": "npm run start:css"
     },
     "devDependencies": {
-      "@wordpress/scripts": "^30.0.0"
+      "@wordpress/scripts": "^30.0.0",
+      "postcss-import": "^15.1.0",
+      "postcss-nesting": "^12.0.1",
+      "autoprefixer": "^10.4.15"
     }
   }
   

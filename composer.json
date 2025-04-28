@@ -1,8 +1,23 @@
 {
+    "name": "mehulgohil/aura-theme",
+    "description": "Aura – A developer-first WordPress block theme starter for building custom block themes.",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+      {
+        "name": "Mehul Gohil",
+        "email": "hello@mehulgohil.com",
+        "homepage": "https://mehulgohil.com"
+      }
+    ],
     "autoload": {
       "psr-4": {
         "Aura\\Theme\\": "src/"
       }
-    }
+    },
+    "config": {
+      "optimize-autoloader": true
+    },
+    "require": {}
   }
   
