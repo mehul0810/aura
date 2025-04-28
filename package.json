@@ -5,8 +5,8 @@
   "author": "Mehul Gohil <your@email.com>",
   "license": "GPL-2.0-or-later",
   "scripts": {
-    "build:css": "postcss styles/main.css -o styles/main.build.css",
-    "start:css": "postcss styles/main.css -o styles/main.build.css --watch",
+    "build:css": "postcss assets/src/css/main.css -o assets/build/css/main.build.css",
+    "start:css": "postcss assets/src/css/main.css -o assets/build/css/main.build.css --watch",
     "build": "npm run build:css",
     "start": "npm run start:css"
   },

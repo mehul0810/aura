@@ -42,7 +42,7 @@ function enqueue_styles() {
 
 	wp_enqueue_style(
 		'aurakit-style',
-		get_template_directory_uri() . '/styles/main.build.css',
+		get_template_directory_uri() . '/assets/build/css/main.build.css',
 		array(),
 		wp_get_theme()->get( 'Version' )
 	);
