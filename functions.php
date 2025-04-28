@@ -41,7 +41,7 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\\aura_setup' );
 function aura_enqueue_styles() {
 
 	wp_enqueue_style(
-		'aura-style',
+		'aurakit-style',
 		get_template_directory_uri() . '/styles/main.build.css',
 		array(),
 		wp_get_theme()->get( 'Version' )
@@ -56,10 +56,10 @@ function aura_register_block_patterns() {
 
 	// Register custom pattern categories.
 	if ( function_exists( 'register_block_pattern_category' ) ) {
-		register_block_pattern_category( 'aura-call-to-action', array( 'label' => __( 'Call to Action', 'aura' ) ) );
-		register_block_pattern_category( 'aura-featured', array( 'label' => __( 'Featured', 'aura' ) ) );
-		register_block_pattern_category( 'aura-columns', array( 'label' => __( 'Columns', 'aura' ) ) );
-		register_block_pattern_category( 'aura-text', array( 'label' => __( 'Text', 'aura' ) ) );
+		register_block_pattern_category( 'aurakit-call-to-action', array( 'label' => __( 'Call to Action', 'aurakit' ) ) );
+		register_block_pattern_category( 'aurakit-featured', array( 'label' => __( 'Featured', 'aurakit' ) ) );
+		register_block_pattern_category( 'aurakit-columns', array( 'label' => __( 'Columns', 'aurakit' ) ) );
+		register_block_pattern_category( 'aurakit-text', array( 'label' => __( 'Text', 'aurakit' ) ) );
 	}
 
 	// Auto-register all patterns from the /patterns/ directory.
