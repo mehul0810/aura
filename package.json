@@ -1,0 +1,12 @@
+{
+    "scripts": {
+      "build:css": "wp-scripts build-style",
+      "start:css": "wp-scripts start-style",
+      "build": "npm run build:css",
+      "start": "npm run start:css"
+    },
+    "devDependencies": {
+      "@wordpress/scripts": "^30.0.0"
+    }
+  }
+  
