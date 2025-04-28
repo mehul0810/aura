@@ -1,0 +1,112 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+      "color": {
+        "palette": [
+          {
+            "slug": "primary",
+            "color": "#1E40AF",
+            "name": "Primary"
+          },
+          {
+            "slug": "secondary",
+            "color": "#64748B",
+            "name": "Secondary"
+          },
+          {
+            "slug": "light",
+            "color": "#F8FAFC",
+            "name": "Light"
+          },
+          {
+            "slug": "dark",
+            "color": "#0F172A",
+            "name": "Dark"
+          }
+        ],
+        "defaultPalette": true,
+        "custom": false
+      },
+      "spacing": {
+        "blockGap": "1.5rem",
+        "padding": {
+          "top": "1rem",
+          "bottom": "1rem",
+          "left": "1rem",
+          "right": "1rem"
+        },
+        "margin": {
+          "top": "1rem",
+          "bottom": "1rem"
+        },
+        "units": ["px", "em", "rem", "%"]
+      },
+      "typography": {
+        "fontFamilies": [
+          {
+            "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif",
+            "name": "System UI",
+            "slug": "system"
+          }
+        ],
+        "fontSizes": [
+          {
+            "slug": "small",
+            "size": "0.875rem",
+            "name": "Small"
+          },
+          {
+            "slug": "medium",
+            "size": "1rem",
+            "name": "Medium"
+          },
+          {
+            "slug": "large",
+            "size": "1.5rem",
+            "name": "Large"
+          },
+          {
+            "slug": "x-large",
+            "size": "2.25rem",
+            "name": "Extra Large"
+          }
+        ],
+        "customFontSize": true,
+        "customLineHeight": true
+      },
+      "layout": {
+        "contentSize": "720px",
+        "wideSize": "1200px"
+      },
+      "custom": {
+        "spacing": {
+          "small": "1rem",
+          "medium": "2rem",
+          "large": "4rem"
+        }
+      }
+    },
+    "styles": {
+      "spacing": {
+        "blockGap": "1.5rem",
+        "padding": {
+          "top": "1rem",
+          "bottom": "1rem",
+          "left": "1rem",
+          "right": "1rem"
+        }
+      },
+      "typography": {
+        "fontFamily": "var(--wp--preset--font-family--system)",
+        "fontSize": "1rem",
+        "lineHeight": "1.6"
+      },
+      "color": {
+        "background": "#FFFFFF",
+        "text": "#0F172A"
+      }
+    },
+    "templateParts": []
+  }
+  
