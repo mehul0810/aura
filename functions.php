@@ -1,6 +1,6 @@
 <?php
 /**
- * Functions file for Aura Theme.
+ * Functions file for AuraKit Theme.
  *
  * @package Aura\Theme
  */
@@ -42,7 +42,7 @@ function aura_enqueue_styles() {
 
 	wp_enqueue_style(
 		'aura-style',
-		get_template_directory_uri() . '/styles/main.css',
+		get_template_directory_uri() . '/styles/main.build.css',
 		array(),
 		wp_get_theme()->get( 'Version' )
 	);

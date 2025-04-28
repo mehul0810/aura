@@ -15,7 +15,7 @@
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
-  <p class="has-text-align-center has-medium-font-size">Aura gives developers a clean, scalable foundation for modern WordPress block themes.</p>
+  <p class="has-text-align-center has-medium-font-size">AuraKit gives developers a clean, scalable foundation for modern WordPress block themes.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"2rem"}}}} -->

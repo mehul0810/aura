@@ -28,7 +28,7 @@
       <!-- /wp:heading -->
 
       <!-- wp:paragraph -->
-      <p>Build beautiful, fast, and scalable block themes for your clients or products with Aura — the ultimate developer-friendly starter theme.</p>
+      <p>Build beautiful, fast, and scalable block themes for your clients or products with AuraKit — the ultimate developer-friendly starter theme.</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:buttons -->

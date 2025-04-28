@@ -1,20 +1,20 @@
 {
-    "name": "aura-theme",
-    "version": "0.0.1",
-    "description": "Aura – Developer-first WordPress block theme starter.",
-    "author": "Mehul Gohil <your@email.com>",
-    "license": "GPL-2.0-or-later",
-    "scripts": {
-      "build:css": "wp-scripts build-style",
-      "start:css": "wp-scripts start-style",
-      "build": "npm run build:css",
-      "start": "npm run start:css"
-    },
-    "devDependencies": {
-      "@wordpress/scripts": "^30.0.0",
-      "postcss-import": "^15.1.0",
-      "postcss-nesting": "^12.0.1",
-      "autoprefixer": "^10.4.15"
-    }
+  "name": "aura-theme",
+  "version": "0.0.1",
+  "description": "AuraKit – Developer-first WordPress block theme starter.",
+  "author": "Mehul Gohil <your@email.com>",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build:css": "postcss styles/main.css -o styles/main.build.css",
+    "start:css": "postcss styles/main.css -o styles/main.build.css --watch",
+    "build": "npm run build:css",
+    "start": "npm run start:css"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0",
+    "autoprefixer": "^10.4.15",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.1"
   }
-  
+}

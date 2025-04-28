@@ -1,4 +1,4 @@
-# Aura Starter Theme
+# AuraKit Starter Theme
 
 A developer-first, clean, mobile-first WordPress Full Site Editing (FSE) block theme designed for building **custom WordPress themes** faster.
 
