@@ -33,9 +33,29 @@
           "slug": "muted",
           "color": "#CBD5E1",
           "name": "Muted"
+        },
+        {
+          "slug": "error",
+          "color": "#EF4444",
+          "name": "Error"
+        },
+        {
+          "slug": "warning",
+          "color": "#F59E0B",
+          "name": "Warning"
+        },
+        {
+          "slug": "success",
+          "color": "#22C55E",
+          "name": "Success"
+        },
+        {
+          "slug": "info",
+          "color": "#3B82F6",
+          "name": "Info"
         }
       ],
-      "defaultPalette": true,
+      "defaultPalette": true,  // Enables the color palette in the editor
       "custom": false
     },
     "spacing": {
