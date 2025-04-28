@@ -1,0 +1,26 @@
+<?php
+/**
+ * Title: Simple Call to Action
+ * Slug: aura/cta
+ * Categories: call-to-action, featured
+ * Keywords: cta, call to action, button
+ * Viewport Width: 1200
+ */
+?>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem","left":"1rem","right":"1rem"}},"color":{"background":"var(--wp--preset--color--primary)"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:4rem;padding-left:1rem;padding-right:1rem;background-color:var(--wp--preset--color--primary)">
+  
+  <!-- wp:heading {"textAlign":"center","level":2,"textColor":"light","fontSize":"large"} -->
+  <h2 class="has-text-align-center has-light-color has-large-font-size">Ready to launch your next project?</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"1.5rem"}}}} -->
+  <div class="wp-block-buttons" style="margin-top:1.5rem">
+    <!-- wp:button {"backgroundColor":"light","textColor":"dark"} -->
+    <div class="wp-block-button"><a class="wp-block-button__link has-light-background-color has-dark-color">Start Now</a></div>
+    <!-- /wp:button -->
+  </div>
+  <!-- /wp:buttons -->
+
+</div>
+<!-- /wp:group -->
