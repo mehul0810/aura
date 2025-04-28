@@ -33,7 +33,7 @@ function setup() {
 	// Add support for wide align images and blocks.
 	add_theme_support( 'align-wide' );
 
-	add_theme_support( 'block-templates' );
+	// add_theme_support( 'block-templates' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
 
